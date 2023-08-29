@@ -1,94 +1,53 @@
 ---
-title: "About"
+title: "About/关于"
 permalink: "/about/"
 layout: page
 ---
 
-## Installation
+## 简介
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+记录自己的工作、生活、学习和各种各样奇怪的想法，目前只服务于自己。如果你发现我了的话，欢迎交流！
 
-## Features
+## 分类
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+ - 学习
+ - 工作
+ - 生活
+ - 奇思妙想
+ - 杂七杂八
+ - 移民相关
+ - 雅思相关
+ - 待进一步分类/添加超链接
+ - 可以通过以下方式支持我：TBD
 
-## Based on
+## 版本
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+- ver20230829.1
 
-## Installation (jekyll-remote-theme method)
+## fork from
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+Jekyll themes
 
 ```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
+got nothing to write here
 
 plugins:
-  - jekyll-remote-theme
+  - love you guys!
 ```
 
-Note: to enable icons you also need to copy over the `_data` folder.
+Note: just be happy
 
-## Config
+## personal website
 
-Your `_config.yml` could for example look like this:
+https://keeptryinggggg.github.io
+www.keeptrying.work
 
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+Note:
+1. 应该还要加上超链接的，但现在不是重点；
+2. 第二个买了域名但还没学会弄好，先以第一个为主；
+3. 把第二个放在这里只是为了提醒自己花了钱的东西不要忘。
 
-# Layout
 
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
-
-# Menu
-
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
-```
-
-## MathJax
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
-
-## License
-
-[public domain](http://unlicense.org/)
 
 ## Screenshots
 
