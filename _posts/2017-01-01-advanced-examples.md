@@ -1,63 +1,39 @@
 ---
-title:  "Advanced examples"
+title:  "当我讨厌“同事转笔”的时候我在讨厌些什么"
 mathjax: true
 layout: post
 categories: media
 ---
 
-![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
 
+## 背景
 
-## MathJax
+这是我入职新公司的第二个月。同期入职的有两位同事，其中一位有个习惯是在摸鱼时转笔。单纯转笔倒没什么问题，但问题在于——
+1. 他转笔技术不好，转两下笔就砸在桌面上，安静的办公区域除了鼠标声外就是他间隔时间不等的笔掉落的声音；
+2. 他一整天都在摸鱼，几乎没有工作。这也就导致了他的右手一直拿着他那支笔在转，从早上九点到傍晚六点一直重复着【转-落-捡-转】这个动作。我们虽然摸鱼，右手上拿着的都是鼠标，而他，转笔；
+3. 如前文所说，办公区域十分安静，几百平的办公区域只有十来个人，各自做着自己的事情，鲜少交流。这份安静更衬托出来他笔掉落声音的吵闹；
+4. 我有时候会在工作时间看书，写东西，或者进行雅思听力、阅读的练习，这些事情都需要专注，而在我专注的时候，经常出现这种频率不定、忽然出现的响声会极大地影响我的状态和心情，到现在我听到他笔掉的声音都条件性反射地生气、头脑胀痛、神经衰弱，我已经受不了了。
 
-You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
+## 处理方法
 
-[Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
+我知道一个人生气没用，我也知道人和人需要沟通，我不是没有做过这些。
+早在一个月以前，他刚入职，转笔烦到我的时候，我忍了两天后委婉地提醒：“你一直在转笔啊？”
+估计这句话过于委婉了，再加上他是个男的，还是个没有眼力见、没有生活经验、自大的男的。他说：“嗯，我习惯了。从上初中同学教我转笔后就一直这样了。”
+后来不久的会议上，他看到我们的上级也在转笔，还找我说：“你看x总也转笔”。
+我对他这句话的理解是：他把自己和上级拉到一起，抬高自己转笔这个行为的意义。而这句话也体现了他完全没觉得这对别人造成了不好的影响（且还以此为荣），我之前的提醒也没能让他意识到这一点。我当时第一反应是无语，后来很想破口大骂傻逼。
 
-$$ e^{i\theta}=\cos(\theta)+i\sin(\theta) $$
+协调没能成功，工作还需继续。
+后来在实在很烦的时候，我吸取了上次的教训，直接在我们三个人的新人群里跟他说：“麻烦转笔的时候控制一下，不要掉。”
+这已经很直接了吧？他回复：“好难。”然后停了一会后继续。
+过了一个周我还是受不了，再次用同样的话提醒，依旧没改。
+今天我真的头要裂开，再次提醒，并且直说很烦。他还狡辩说没掉。至此，我再也无法忍受了。
+他一掉，我就往他的方向翻一个白眼；他一掉，我就嘴里骂一次脏话；他一掉，我就嘴里啧一声；我踏爹的也不想这么没素质，你逼我的。你打扰了我的工作，就需要承受我的负能量。
 
-The [Euler-Lagrange](https://en.wikipedia.org/wiki/Lagrangian_mechanics) differential equation is the fundamental equation of calculus of variations.
+但我估计他还是不会改，提醒已经没有用了，目前我想的办法有：
+- 我走，搬到一个离他很远，不受他影响的工位，眼不见为净，远离这个傻逼男的；
+- 我离职，这份工作本来也没打算长远干，只是作为我一个过渡时期的选择，他转笔作为一个trigger，在爆发点的时候会是一个助推力，但我希望让他也不舒服再走；
+- 直接在办公室大喊大叫让他不要别发出这个声音了，撕破脸；
+- 让领导跟他说，既然我的话没有用，那只好用职场上那一套——搬出上级了。
 
-$$ \frac{\mathrm{d}}{\mathrm{d}t} \left ( \frac{\partial L}{\partial \dot{q}} \right ) = \frac{\partial L}{\partial q} $$
+且行且看吧，之后的进展继续更新在这里。
 
-The [Schrödinger equation](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation) describes how the quantum state of a quantum system changes with time.
-
-$$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \left [ \frac{-\hbar^2}{2\mu}\nabla^2 + V(\mathbf{r},t)\right ] \Psi(\mathbf{r},t) $$
-
-## Code
-
-Embed code by putting `{{ "{% highlight language " }}%}` `{{ "{% endhighlight " }}%}` blocks around it. Adding the parameter `linenos` will show source lines besides the code.
-
-{% highlight c %}
-
-static void asyncEnabled(Dict* args, void* vAdmin, String* txid, struct Allocator* requestAlloc)
-{
-    struct Admin* admin = Identity_check((struct Admin*) vAdmin);
-    int64_t enabled = admin->asyncEnabled;
-    Dict d = Dict_CONST(String_CONST("asyncEnabled"), Int_OBJ(enabled), NULL);
-    Admin_sendMessage(&d, txid, admin);
-}
-
-{% endhighlight %}
-
-## Gists
-
-With the `jekyll-gist` plugin, which is preinstalled on Github Pages, you can embed gists simply by using the `gist` command:
-
-<script src="https://gist.github.com/5555251.js?file=gist.md"></script>
-
-## Images
-
-Upload an image to the *assets* folder and embed it with `![title](/assets/name.jpg))`. Keep in mind that the path needs to be adjusted if Jekyll is run inside a subfolder.
-
-A wrapper `div` with the class `large` can be used to increase the width of an image or iframe.
-
-![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
-
-[Flower](https://unsplash.com/photos/iGrsa9rL11o) by Tj Holowaychuk
-
-## Embedded content
-
-You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
-
-{% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
