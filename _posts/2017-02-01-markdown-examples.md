@@ -9,23 +9,22 @@ layout: post
 
 ### Single line
 
-> My mom always said life was like a box of chocolates. You never know what you're gonna get.
+> 用>+空格
 
 ### Multiline
 
-> What do you get when you cross an insomniac, an unwilling agnostic and a dyslexic?
->
-> You get someone who stays up all night torturing himself mentally over the question of whether or not there's a dog.
->
-> – _Hal Incandenza_
+> 连续
+> 用>+空格
+> 就可以了
 
 ## Horizontal Rule
 
 ---
+划个---即可！分割线
 
 ## Table
 
-| Title 1          | Title 2          | Title 3         | Title 4         |
+| 表格难道要          | 一下下硬打吗     |     ？？     | ？？         |
 |------------------|------------------|-----------------|-----------------|
 | First entry      | Second entry     | Third entry     | Fourth entry    |
 | Fifth entry      | Sixth entry      | Seventh entry   | Eight entry     |
@@ -34,38 +33,24 @@ layout: post
 
 ## Code
 
-Source code can be included by fencing the code with three backticks. Syntax highlighting works automatically when specifying the language after the backticks.
 
 ````
-```javascript
-function foo () {
-    return "bar";
-}
+```我应该
+暂且还不需要用到
+code吧？
 ```
 ````
-
-This would be rendered as:
-
-```javascript
-function foo () {
-    return "bar";
-}
-```
 
 ## Lists
 
 ### Unordered
 
-* First item
-* Second item
-* Third item
-    * First nested item
-    * Second nested item
+* 用*吗？-应该也可以的啊
+* 发现他们都是从二级标题开始
+* 是因为一级标题就是page的大标题本身吗？
+    * maybe
+    * 
 
 ### Ordered
 
-1. First item
-2. Second item
-3. Third item
-    1. First nested item
-    2. Second nested item
+1. 这个我知道的呀
